@@ -1,0 +1,323 @@
+/*
+    stlye.css
+
+    This is the page that will have all the CSS for our project site.
+    Be sure to follow the order of the rules in this this file.
+*/
+
+
+/* ========================================================= */
+/*  IMPORTS for fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+/* ========================================================= */
+/*  Page Level Style Rules */
+
+body {
+    font-family: 'Noto Serif', serif;
+    /*background-image: linear-gradient(to right,grey, white, grey);*/
+    background-color: #D8D8D8;
+    
+}
+
+/* ========================================================= */
+/* Utility Text Style Rules */
+
+.border {
+  border: 10px solid yellow;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+/* ---------------------------------------*
+/* Add spacing to text elements */
+
+.text-spacing {
+    padding: 0.25em;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #004f87;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #A3BAC3;
+    font-family: 'Lato', sans-serif;
+}
+
+h3{
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #007090;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;  
+    line-height: 1.8;
+    color: #007090;
+    font-family: 'Noto Serif', serif;
+}
+
+a{
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #1B998B;
+    font-family: 'Noto Serif', cursive;
+
+}
+
+/* HR Styles */
+
+hr {
+	border-top: 10px dashed #544E61;
+}
+
+/* ========================================================= */
+/*  Rules */
+
+/* Container Section */
+
+.container-fluid, .container {
+    padding: 50px 20px;
+}
+
+.text-spacing {
+    padding: 0.35em;
+}
+
+.section-spacing {
+    padding: 1.0em;
+}
+
+.vert-center{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================================= */
+/* Color Style Rules
+
+    Reference:  coolors.co
+*/
+
+.bg-grey {
+    background-color:  #A3BAC3;
+    color: #F7F5FB !important;
+}
+
+.bg-lightblue {
+    background-color: #75DDDD;
+    color: #007090 !important;
+}
+
+.bg-red {
+    background-color: #ED1C24;
+    color: #F7F5FB !important;
+}
+
+.bg-navy {
+    background-color: #007090;
+    color: #F7F5FB !important;
+}
+
+.bg-white {
+    background-color: #FDFFFC;
+    color: #333745 !important;
+}
+
+.text-white {
+    color: #F7F5FB !important;    
+}
+
+
+
+/* ========================================================= */
+/* Extending BS Stlye Rules */
+
+/* --------------------------------------------------------- */
+/* Row .border :: add borders to columns */
+
+.borders > [class*="col-"] {
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+/* --------------------------------------------------------- */
+/* Tabs .borders :: Add borders to tab content */
+
+.tab-content.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+/* Button Styles */
+
+.btn {
+    border: 1px solid #ED1C24;
+    background-color: #FDFFFC !important;
+    color: #ED1C24;
+
+}
+
+.btn:hover {
+    border: 1px solid #A3BAC3;
+    background-color: #ED1C24 !important;
+    color: #FDFFFC;
+}
+
+.btn2 {
+    border: 1px solid #ED1C24;
+    background-color: #FDFFFC !important;
+    color: #ED1C24;
+    margin-top: 9px;
+}
+
+.btn2:hover {
+    border: 1px solid #A3BAC3;
+    background-color: #ED1C24 !important;
+    color: #FDFFFC;
+}
+
+/* ========================================================= */
+/* Tabs */
+
+/* Tabs .borders :: Add borders to tab content */
+
+.nav-tabs .nav-link {
+    background-color:  #007090;
+    color: #FDFFFC !important;
+    border-color: #A3BAC3; 
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    background-color:  #75DDDD;
+    color: #007090 !important;
+    border-color: #007090;    
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    background-color:  #FDFFFC;
+    color: #007090 !important;
+    border-color: #007090;
+}
+
+
+/* ========================================================= */
+/* Navbar */
+
+.navbar {
+  background-color: #007090;
+}
+.navbar .navbar-brand {
+  color: #FDFFFC;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #75DDDD;
+}
+.navbar .navbar-text {
+  color: #FDFFFC;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ecf0f1;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #f7f5fb;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #007090;
+  background-color: #A3BAC3;
+}
+.navbar .navbar-toggle {
+  border-color: #f7f5fb;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #F7F5FB;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #ecf0f1;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #007090;
+}
+.navbar .navbar-link {
+  color: #ecf0f1;
+}
+.navbar .navbar-link:hover {
+  color: #007090;
+}
+
+
+
+/* Style the search box inside the navigation bar */
+.input[type=text] {
+    /*float: center;*/
+    padding: 6px;
+    border:  2px solid #A3BAC3;;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 17px;
+    position: absolute;
+    width: 100%;
+
+}
